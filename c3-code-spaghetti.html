@@ -1,191 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
+  <head>
     <!-- Questionnaire à l'adresse suivante: https://forms.office.com/r/j3FyHzC6pk -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carte Produit</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body{
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-            font-family: "Poppins", sans-serif;
-        }
-        .c {
-            width: 300px;
-            border: 1px solid #b6b6be;
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-        }
-        .c img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .c h2 {
-            font-size: 24px;
-            color: #2c3e50;
-            margin: 15px 0 10px 0;
-            font-weight: 600;
-        }
-        .c p {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin: 0 0 15px 0;
-            line-height: 1.6;
-        }
-        .c .p {
-            font-size: 20px;
-            color: #27ae60;
-            font-weight: bold;
-            margin: 0 0 15px 0;
-        }
-        .c button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 14px;
-            width: 100%;
-        }
-        .c button:hover {
-            background: #2980b9;
-        }
-        .badge {
-            display: inline-block;
-            background: #e74c3c;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        .c2 {
-            width: 300px;
-            border: 1px solid #b6b6be;
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            display: flex;
-            gap: 15px;
-        }
-        .c2 img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .c2 h3 {
-            font-size: 14px;
-            color: #2c3e50;
-            margin: 0 0 8px 0;
-        }
-        .c2 p {
-            font-size: 10px;
-            color: #7f8c8d;
-            margin: 0 0 17px 0;
-        }
-        .c2 button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 10px;
-            width: 100%;
-        }
-        .c2 button:hover {
-            background: #2980b9;
-        }
+      body {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        font-family: "Poppins", sans-serif;
+      }
+      .c {
+        width: 300px;
+        border: 1px solid #b6b6be;
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        border-radius: 8px;
+      }
+      .c img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .c h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin: 15px 0 10px 0;
+        font-weight: 600;
+      }
 
-        .c3 {
-            width: 300px;
-            border: 3px solid #e74c3c;
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            position: relative;
-        }
-        .c3 img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .c3 h2 {
-            font-size: 24px;
-            color: #2c3e50;
-            margin: 15px 0 10px 0;
-            font-weight: 600;
-        }
-        .c3 p {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin: 0 0 15px 0;
-            line-height: 1.6;
-        }
-        .p2 {
-            font-size: 20px;
-            color: #27ae60;
-            font-weight: bold;
-            margin: 0 0 15px 0;
-        }
-        .c3 button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 14px;
-            width: 100%;
-        }
-        .c3 button:hover {
-            background: #2980b9;
-        }
+      .c .p {
+        font-size: 20px;
+        color: #27ae60;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+      }
+      .c button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+      }
+      .c button:hover {
+        background: #2980b9;
+      }
+
+      .c2 {
+        width: 300px;
+        border: 1px solid #b6b6be;
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        gap: 15px;
+      }
+      .c2 img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .c2 h2 {
+        font-size: 14px;
+        color: #2c3e50;
+        margin: 0 0 8px 0;
+      }
+      .c2 p {
+        font-size: 10px;
+        color: #7f8c8d;
+        margin: 0 0 17px 0;
+      }
+      .c2 button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 10px;
+        width: 100%;
+      }
+      .c2 button:hover {
+        background: #2980b9;
+      }
+
+      .c3 {
+        width: 300px;
+        border: 3px solid #e74c3c;
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        border-radius: 8px;
+        position: relative;
+      }
+      .c3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .c3 h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin: 15px 0 10px 0;
+        font-weight: 600;
+      }
+      .c3 p {
+        font-size: 14px;
+        color: #7f8c8d;
+        margin: 0 0 15px 0;
+        line-height: 1.6;
+      }
+
+      .c3 .p2 {
+        font-size: 20px;
+        color: #27ae60;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+      }
+
+      .c3 button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+      }
+      .c3 button:hover {
+        background: #2980b9;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #e74c3c;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-size: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="c">
-   
-        <img src="https://static.photos/technology/320x240/37" alt="Produit">
-        <h2>Nom du Produit 1</h2>
-        <p>Description courte du produit qui donne envie d'acheter.</p>
-        <div class="p">1149,99 $</div>
-        <button>Ajouter au panier</button>
+      <img src="https://static.photos/technology/320x240/37" alt="Produit" />
+      <h2 class="card__title">Nom du Produit 1</h2>
+      <p>Description courte du produit qui donne envie d'acheter.</p>
+      <div class="p">1149,99 $</div>
+      <button>Ajouter au panier</button>
     </div>
 
-
     <div class="c2">
-        <img src="https://static.photos/technology/100x100/130" alt="Mini produit">
-        <div>
-            <h3>Nom du produit mini 2</h3>
-            <p>Description rapide</p>
-            <button>Ajouter au panier</button>
-        </div>
+      <img
+        src="https://static.photos/technology/100x100/130"
+        alt="Mini produit"
+      />
+      <h2>Nom du produit mini 2</h2>
+      <p>Description rapide</p>
+      <button>Ajouter au panier</button>
     </div>
 
     <div class="c3">
-        <span class="badge">NOUVEAU</span>
-        <img src="https://static.photos/gaming/320x240/30" alt="Produit">
-        <h2>Nom du Produit 3</h2>
-        <p>Description courte du produit qui donne envie d'acheter.</p>
-        <div class="p2">1120,99 $</div>
-        <button>Ajouter au panier</button>
+      <span class="badge">NOUVEAU</span>
+      <img src="https://static.photos/gaming/320x240/30" alt="Produit" />
+      <h2>Nom du Produit 3</h2>
+      <p>Description courte du produit qui donne envie d'acheter.</p>
+      <div class="p2">1120,99 $</div>
+      <button>Ajouter au panier</button>
     </div>
-</body>
+  </body>
 </html>
